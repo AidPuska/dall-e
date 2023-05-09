@@ -22,7 +22,7 @@ const CreatePost = () => {
     if(form.prompt) {
       try {
         setGeneratingImg(true)
-        const response = await fetch('http://localhost:8080/api/v1/dalle', {
+        const response = await fetch('https://dall-e-aid.onrender.com//api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ const CreatePost = () => {
 
       try {
 
-        const res = await fetch('http://localhost:8080/api/v1/post', {
+        const res = await fetch('https://dall-e-aid.onrender.com//api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
